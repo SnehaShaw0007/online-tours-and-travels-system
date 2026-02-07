@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Register</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #D78FEE, #b983ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .register-box {
+      background: #ffffff;
+      padding: 30px;
+      width: 380px;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4a235a;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #7a3db8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #6a2fa4;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .links a {
+      color: #6a2fa4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="register-box">
+    <h2>User Registration</h2>
+
+    <form action="/OnlineToursTravels/UserRegisterServlet" method="post">
+
+      <label>Name</label>
+      <input name="name" required>
+
+      <label>Phone</label>
+      <input name="phone" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required>
+
+      <label>Security Question</label>
+      <input name="question" required>
+
+      <label>Security Answer</label>
+      <input name="answer" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="links">
+      <a href="login.html">Already have an account? Login</a>
+    </div>
+  </div>
+
+</body>
+</html>

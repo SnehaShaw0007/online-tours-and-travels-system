@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Bus</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #D78FEE, #b76be4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 30px 40px;
+      width: 380px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #9b4ddf;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #9b4ddf;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #7d35c7;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Add Bus</h2>
+
+  <form action="/OnlineToursTravels/BusServlet" method="post">
+    <input type="hidden" name="action" value="addBus">
+
+    <label>Bus Name</label>
+    <input name="busName" required>
+
+    <label>Source</label>
+    <input name="source" required>
+
+    <label>Destination</label>
+    <input name="destination" required>
+
+    <label>Journey Date</label>
+    <input type="date" name="date" required>
+
+    <label>Total Seats</label>
+    <input name="seats" required>
+
+    <label>Phone No</label>
+    <input name="phone" required>
+
+    <button type="submit">Add Bus</button>
+  </form>
+</div>
+
+</body>
+</html>

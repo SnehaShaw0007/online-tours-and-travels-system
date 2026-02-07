@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #D78FEE, #b76be4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 35px 45px;
+            width: 360px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            background: #9b4ddf;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background: #7d35c7;
+        }
+
+        .logout {
+            background: #e74c3c;
+        }
+
+        .logout:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Admin Dashboard</h2>
+
+    <a href="addBus.html">Add Bus</a>
+    <a href="addFlight.html">Add Flight</a>
+
+    <a href="../LogoutServlet" class="logout"> Logout</a>
+</div>
+
+</body>
+</html>
